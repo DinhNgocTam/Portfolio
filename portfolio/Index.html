@@ -14,38 +14,43 @@
     <link rel="stylesheet" href="./assets/css/Style.css" />
   </head>
   <body>
-    <header class="header">
-      <a href="" class="header__logo">Oyindamola</a>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="">About me</a></li>
-          <li class="nav__item"><a href="">Services</a></li>
-          <li class="nav__item"><a href="">Contact me</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
 
-    <section class="section banner">
-      <div class="banner__left">
-        <p class="banner__heading">
-          Hi. I am <br />
-          Dinh Ngoc Tam
-        </p>
-        <p class="banner__job">Frontend Developer</p>
-        <div class="row">
-          <button class="button button--primary">Download CV</button>
-          <button class="button button--secondary">Learn More</button>
+      <header class="header">
+        <a href="" class="header__logo">Oyindamola</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="">About me</a></li>
+            <li class="nav__item"><a href="">Services</a></li>
+            <li class="nav__item"><a href="">Contact me</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>      
+
+
+    <div class="container">
+      <section class="section banner">
+        <div class="banner__left">
+          <p class="banner__heading">
+            Hi. I am <br />
+            Dinh Ngoc Tam
+          </p>
+          <p class="banner__job">Frontend Developer</p>
+          <div class="row">
+            <button class="button button--primary">Download CV</button>
+            <button class="button button--secondary">Learn More</button>
+          </div>
         </div>
-      </div>
-      <div class="banner__right">
-        <img
-          class="banner__img"
-          src="./assets/images/hbz-travis-scott-index-1-1508792926.jpg"
-          alt=""
-        />
-      </div>
-    </section>
-
+        <div class="banner__right">
+          <img
+            class="banner__img"
+            src="./assets/images/hbz-travis-scott-index-1-1508792926.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+    </div>
     <section class="section about">
       <h3 class="section__heading">About</h3>
       <p class="about__desc">
@@ -78,63 +83,79 @@
         </li>
       </ul>
     </section>
-    <section class="section feature">
-      <h3 class="section__heading">What I do</h3>
-      <il class="feature__list">
-        <li class="feature__items">
-          <img src="./assets/images/feature1.svg" alt="">
-          <p>Software Development</p>
-        </li>
-        <li class="feature__items feature__item--highlight">
-          <img src="./assets/images/feature2.svg" alt="">
-          <p>Web Development</p>
-        </li>
-        <li class="feature__items">
-          <img src="./assets/images/feature3.svg" alt="">
-          <p>Web <br> Design</p>
-        </li>
-      </il>
-    </section>
-    <section class="section skill">
+    <div class="container">
+      <section class="section feature">
+        <h3 class="section__heading">What I do</h3>
+        <il class="feature__list">
+          <li class="feature__items">
+            <img src="./assets/images/feature1.svg" alt="" />
+            <p>Software Development</p>
+          </li>
+          <li class="feature__items feature__item--highlight">
+            <img src="./assets/images/feature2.svg" alt="" />
+            <p>Web Development</p>
+          </li>
+          <li class="feature__items">
+            <img src="./assets/images/feature3.svg" alt="" />
+            <p>
+              Web <br/>
+              Design 
+            </p>
+          </li>
+        </il>
+      </section>
+    </div>
 
+    
+    <section class="section skill">
       <h3 class="section__heading">My Skills</h3>
       <ul class="skill__list">
-        <li class="skill__items">
-          <span>50%</span>
-          <p>HTML</p>
-        </li>
-        <li class="skill__items">
-          <span>20%</span>
-          <p>CSS</p>
-        </li>
-        <li class="skill__items">
-          <span>10%</span>
-          <p>Javascript</p>
-        </li>
-        <li class="skill__items">
-          <span>2%</span>
-          <p>PHP</p>
-        </li>
+        <div class="container">
+          <div class="row">
+
+            <li class="skill__items">
+              <span>50%</span>
+              <p>HTML</p>
+            </li>
+            <li class="skill__items">
+              <span>20%</span>
+              <p>CSS</p>
+            </li>
+            <li class="skill__items">
+              <span>10%</span>
+              <p>Javascript</p>
+            </li>
+            <li class="skill__items">
+              <span>2%</span>
+              <p>PHP</p>
+            </li>
+          </div>
       </ul>
     </section>
+  </div>
 
     <section class="section contact">
       <h3 class="section__heading">Get in touch</h3>
       <ul class="contact__list">
         <li class="contact__items">
-          <input type="text" placeholder="First name" class="contact__input">
+          <input type="text" placeholder="First name" class="contact__input" />
         </li>
         <li class="contact__items">
-          <input type="text" placeholder="Last name" class="contact__input">
+          <input type="text" placeholder="Last name" class="contact__input" />
         </li>
         <li class="contact__items">
-          <input type="text" placeholder="Email" class="contact__input">
+          <input type="text" placeholder="Email" class="contact__input" />
         </li>
         <li class="contact__items">
-          <input type="text" placeholder="Password" class="contact__input">
+          <input type="text" placeholder="Password" class="contact__input" />
         </li>
       </ul>
-      <textarea class="contact__textarea" placeholder = "Message" cols="30" rows="10"></textarea>
+      <textarea
+        class="contact__textarea"
+        placeholder="Message"
+        cols="30"
+        rows="10"
+      ></textarea>
       <button class="button button--primary">Submit now</button>
     </section>
     <footer>

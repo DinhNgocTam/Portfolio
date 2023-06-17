@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   padding-left: 80px;
-  padding-right: 80px;
+  /* padding-right: 80px; */
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -30,6 +30,14 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 80px;
+}
+
 .row {
   display: flex;
 }
@@ -42,6 +50,11 @@ a {
 .nav__item a {
   color: white;
   font-size: 18px;
+}
+
+.nav__item a:hover {
+  color: #27ae60;
+  transition: all 0.3s;
 }
 
 .banner {
@@ -74,6 +87,7 @@ a {
 .button {
   color: white;
   padding: 12px 24px;
+  cursor: pointer;
 }
 
 .button--primary {
@@ -82,12 +96,19 @@ a {
   border: none;
 }
 
+.button-primary:hover {
+  background-color: #a5fea5;
+  border: none;
+  transition: all 0.3s;
+}
 .button--secondary {
   margin-left: 20px;
-  background-color: black;
+  background-color: transparent;
   border: 1px solid #f2f2f2;
 }
-
+.button-secondary:hover {
+  background-color: #171717;
+}
 .banner__right {
   width: 650px;
   height: 650px;
@@ -170,58 +191,65 @@ a {
   list-style: none;
   display: flex;
   gap: 100px;
+  width: 100%;
 }
 
 .feature__items {
+  width: 100%;
   background-color: #212121;
   padding: 40px 60px;
-  width: 360px;
+  max-width: calc((100% - 200px) / 3);
 }
 
 .feature__items p {
-  font-weight: 500;
   font-size: 36px;
+  font-weight: 500;
   color: #535353;
   margin-top: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .feature__item--highlight {
   border-bottom: 8px solid #27ae60;
 }
 
-
-.skill__list{
+.skill__list {
   list-style: none;
   display: flex;
   background-color: #212121;
-  padding: 40px 0;
+  padding-top: 40px 0;
+  
+  /* width: 100%; */
 }
 
-.skill__items{
+.skill__items {
   width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.skill__items span{
+.skill__items span {
   font-weight: 700;
   font-size: 72px;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 
-.skill__items p{
+.skill__items p {
   font-weight: 700;
   font-size: 24px;
   color: #27ae60;
   text-transform: uppercase;
 }
-.contact{
+
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contact__input{
+.contact__input {
   background-color: #171717;
   border: none;
   font-weight: 700;
@@ -232,34 +260,33 @@ a {
   outline: none;
   color: #f2f2f2;
 }
-.contact__list{
+.contact__list {
   list-style: none;
   display: flex;
   width: 752px;
   flex-wrap: wrap;
   column-gap: 36px;
   row-gap: 48px;
-  
 }
 
-.contact__textarea{
+.contact__textarea {
   width: 752px;
   margin-top: 48px;
   margin-bottom: 32px;
   padding: 12px;
   height: 109px;
-  background-color : #171717;
+  background-color: #171717;
   font-weight: 700;
   font-size: 14px;
   outline: none;
   color: #fff;
   border: 1px solid #4f4f4f;
 }
-footer{
+footer {
   margin-top: 100px;
   padding-bottom: 28px;
 }
-footer p{
+footer p {
   font-weight: 500;
   font-size: 14px;
   color: #4f4f4f;
