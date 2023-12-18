@@ -1,19 +1,25 @@
-console.log('Hello');
-
-
-var array =[1,2,3,4];
-
-
-for(var item of array){
-    console.log(item);
-}
-
-var person = {
-    name : "Tam",
-    
-}
-
-
-for(var item in person){
-    console.log(person.name);
-}
+const navSlide = () => {
+    const burger = document.querySelector(".hamburger");
+    const nav = document.querySelector(".nav__list");
+    const navLinks = document.querySelectorAll(".nav__item");
+  
+    burger.addEventListener("click", () => {
+      //Toggle Nav
+      nav.classList.toggle("nav-active");
+  
+      //Animate Links
+      navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+          link.style.animation = "";
+        } else {
+          link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 7 + 0
+          }s`;
+        }
+      });
+  
+      //Burger Animation
+      burger.classList.toggle("toggle");
+    });
+  };
+  navSlide();
